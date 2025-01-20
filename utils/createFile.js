@@ -1,5 +1,6 @@
 import { writeFileSync, existsSync } from "node:fs";
-import { join, basename, dirname } from "node:path"
+import { join, basename } from "node:path"
+import chalk from "chalk";
 
 /**
  * 
@@ -10,7 +11,7 @@ function createFileInRootFolder(filename) {
 
     if (!existsSync(eslintConfigFilePath)) {
         writeFileSync(eslintConfigFilePath, "");
-        console.log(`\nThe file "${basename(filename)}" has been created in your current working directory (the directory you ran the just executed command)`)
+        console.log(`\nThe file ${chalk.bgRgb(255, 255, 255).black(basename(filename))} has been created in your current working directory (the directory you ran the just executed command)`)
     }
 }
 

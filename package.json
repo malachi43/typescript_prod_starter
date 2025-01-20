@@ -4,10 +4,26 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "scaffold a production ready typescript project.",
+  "bin": "./cli.js",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.18.0",
+    "express": "^4.21.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  }
 }
