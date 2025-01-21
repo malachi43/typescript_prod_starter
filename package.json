@@ -3,15 +3,30 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malachi43/typescript_prod_starter.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
     "lint": "eslint ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "scaffold",
+    "eslint",
+    "lint",
+    "typescript",
+    "configuration",
+    "javascript"
+  ],
+  "author": "UKO CHIBUIKE MALACHI",
+  "license": "MIT",
   "description": "scaffold a production ready typescript project.",
+  "bugs": {
+    "url": "https://github.com/malachi43/typescript_prod_starter/issues"
+  },
+  "homepage": "https://github.com/malachi43/typescript_prod_starter#readme",
   "bin": "./cli.js",
   "dependencies": {
     "chalk": "^5.4.1",

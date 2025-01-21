@@ -31,7 +31,7 @@ function scaffold() {
     const command = "npm";
     let args = ["install", "--save-dev"]
 
-    const packages = "eslint @eslint/js typescript-eslint @stylistic/eslint-plugin @types/eslint__js typescript express";
+    const packages = "eslint @eslint/js typescript-eslint @stylistic/eslint-plugin @types/eslint__js typescript";
 
     //extract packages from string literal.
     const argsToAdd = extractPackages(packages);
